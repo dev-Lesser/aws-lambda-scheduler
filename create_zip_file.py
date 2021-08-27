@@ -5,7 +5,7 @@ import zipfile
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Process Create Zip file')
-    parser.add_argument('--zipPath', required=True, help="zip folder path")
+    parser.add_argument('--zipPath', required=True, default="lambda_function", help="zip folder path")
     parser.add_argument('--output', default="output.zip", help="output zip name [output.zip]")
 
     args = parser.parse_args()
